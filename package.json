@@ -19,5 +19,8 @@
   "license": "GPLv3",
   "bugs": {
     "url": "https://github.com/libremap/libremap-backbone/issues"
+  },
+  "devDependencies": {
+    "libremap-common": "libremap/libremap-common",
   }
 }
