@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/libremap/libremap-backbone/issues"
   },
-  "devDependencies": {
+  "dependencies": {
     "libremap-common": "libremap/libremap-common"
   }
 }
