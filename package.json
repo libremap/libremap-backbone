@@ -21,6 +21,6 @@
     "url": "https://github.com/libremap/libremap-backbone/issues"
   },
   "devDependencies": {
-    "libremap-common": "libremap/libremap-common",
+    "libremap-common": "libremap/libremap-common"
   }
 }
