@@ -21,6 +21,13 @@
     "url": "https://github.com/libremap/libremap-backbone/issues"
   },
   "dependencies": {
-    "libremap-common": "libremap/libremap-common"
+    "libremap-common": "libremap/libremap-common",
+    "underscore": "~1.5.2",
+    "backbone": "~1.1.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-jasmine-node": "~0.1.0"
   }
 }
