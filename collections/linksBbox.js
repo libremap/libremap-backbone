@@ -10,7 +10,7 @@ module.exports = BboxCollection.extend({
   // passed to BboxCollection (bbox is mandatory!)
   initialize: function (models, options) {
     _.extend(this, _.pick(options, 'byAliasUrl'));
-    BboxCollection.prototype.initialize.call(this, arguments);
+    BboxCollection.prototype.initialize.apply(this, arguments);
   },
   fetch_links: function(models) {
     // TODO respect models parameter :)

@@ -18,7 +18,7 @@ module.exports = Backbone.Collection.extend({
   initialize: function (models, options) {
     options = options || {};
     _.extend(this, _.pick(options, 'bbox', 'url', 'changesUrl', 'changesFilter'));
-    Backbone.Collection.prototype.initialize.call(this, arguments);
+    Backbone.Collection.prototype.initialize.apply(this, arguments);
     this.on('sync', function() {
       this.watch_abort();
       this.watch();
