@@ -16,6 +16,7 @@ module.exports = Backbone.Collection.extend({
   //                  that lie in a given bounding box or whose id is contained
   //                  in a given array of document ids.
   initialize: function (models, options) {
+    options = options || {};
     _.extend(this, _.pick(options, 'bbox', 'url', 'changesUrl', 'changesFilter'));
     Backbone.Collection.prototype.initialize.call(this, arguments);
     this.on('sync', function() {
@@ -111,14 +112,3 @@ module.exports = Backbone.Collection.extend({
     this.fetch( _.extend(options||{}, {remove: false}));
   },
 });
-
-/*
-var api_base_url = 'http://libremap.net/api';
-LibreMap.RouterBboxCollection =  LibreMap.BboxCollection.extend({
-  url: api_base_url + '/routers_by_location_stripped',
-  byAliasUrl: api_base_url + '/routers_by_alias_stripped',
-  changesUrl: api_base_url + '/changes',
-  changesFilter: 'libremap-api/by_id_or_bbox',
-  model: LibreMap.RouterStripped
-});
-*/
