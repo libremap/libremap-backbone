@@ -1,4 +1,5 @@
 var _ = require('underscore');
+var $ = require('jquery');
 var BboxCollection = require('./bbox');
 
 // extens BboxCollection s.t. models corresponding to link endpoints are also

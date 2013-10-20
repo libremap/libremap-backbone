@@ -1,5 +1,6 @@
 var Backbone = require('backbone');
 var _ = require('underscore');
+var $ = require('jquery');
 var common = require('libremap-common');
 
 // fetches models based on bounding boxes and keeps them up-to-date
