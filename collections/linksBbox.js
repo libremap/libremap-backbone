@@ -3,7 +3,7 @@ var BboxCollection = require('./bbox');
 // extens BboxCollection s.t. models corresponding to link endpoints are also
 // pulled in. Models that are added as link endpoints are automatically watched
 // for changes.
-module.exports = BboxCollection.exend({
+module.exports = BboxCollection.extend({
   // initialize respects the key 'byAliasUrl' and all options that can be
   // passed to BboxCollection (bbox is mandatory!)
   initialize: function (models, options) {
